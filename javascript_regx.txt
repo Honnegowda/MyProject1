@@ -1,0 +1,7 @@
+regx for validation of  versions
+/^\d+(\.\d+)*$/
+
+validation of only digits  allowed
+/^\d+$/
+
+
