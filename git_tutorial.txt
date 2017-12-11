@@ -7,8 +7,6 @@ They are two types of version  control
 central repository--> belongs  to organisation 
 Fork --> copy of central repo on our git account
 
-
-
 git
 
 git config --global user.name 'honnegowda'
