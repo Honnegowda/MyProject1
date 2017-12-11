@@ -1,0 +1,28 @@
+A version  control is software tolls to keep track of the code changes.
+
+They are two types of version  control 
+  Distrubuted  version control system
+  centered  version control system
+
+central repository--> belongs  to organisation 
+Fork --> copy of central repo on our git account
+
+
+
+git
+
+git config --global user.name 'honnegowda'
+git  config --global user.email  'ehonnegowda@zeomega.com'
+
+git  status
+git log
+git  add
+git commit
+git pull
+git push
+git  remote
+git  branch
+git clone
+
+
+

@@ -1,0 +1,218 @@
+1.javascript is dynamic and lossley typed scripting language.
+
+2. javascript having 6 datatypes
+	a.Number
+	b.String
+	c.Boolean
+	d.undefined
+	d.Object
+	e.Function
+	
+3.javascript functional language
+    functions are primary citizens(we can treat functions are data)
+
+4.loosley typed
+   function add(a, b){}
+   we  can invoke function different ways
+   add(100, 20
+   add('10','20')
+   add(function(){},  function(){})
+   .
+   .
+   etc
+
+
+5. when function  invoked it will pass two  variables implicity]
+
+   this
+   arguments
+
+6.this depends on the how function is invoked.
+
+7. a method is attribute in  object with its  value is  type function
+    var  emp  = {name:"Honnegowda",
+                 WhoAmI:function(){console.log("I'm"  +this.name)}}
+    here is WhoAmI is method of  an  object
+
+
+8.There 6 different  ways to invoke a function  in javascript
+   a. as Normalfunction
+   b. as method of an object
+   c.using call()
+   d.using apply()
+   e.using new operator(this  will return  default  by constructor  function)
+
+
+9.arguments in funcction is aray like obejct.
+
+
+10 immediatley invoking function Expression(IIFE)
+
+
+11.default value of  function is undefined
+
+12 construtor functions starts with uppercase
+
+13.every object  in javascript have a constructor  property
+
+
+
+true, false, truthy and falsy
+
+
+empty string,  null, undefined, NaN, 0(are the five falsy values in javascript)
+other  than  this  five values all are truthy
+
+
+prototypel  inheritance.
+
+
+prototype hoping.
+prototype hoping for only read
+
+
+Primitives have the following characteristics:
+Compared by value
+The “content” is compared:
+> 3 === 3
+true
+> 'abc' === 'abc'
+true
+Always immutable
+Properties can’t be changed, added, or removed:
+> var str = 'abc';
+> str.length = 1; // try to change property `length`
+> str.length
+// ⇒ no effect
+3
+> str.foo = 3; // try to create property `foo`
+> str.foo
+no effect, unknown property
+
+
+Objects have the following characteristics:
+Compared by reference
+Identities are compared; every value has its own identity:
+> {} === {}
+false
+// two different empty objects
+> var obj1 = {};
+> var obj2 = obj1;
+> obj1 === obj2
+true
+Mutable by default
+You can normally freely change, add, and remove properties (see “Single Objects”
+on page 25):
+> var obj = {};
+> obj.foo = 123; // add property `foo`
+> obj.foo
+123
+
+• undefined means “no value.” 
+
+Uninitialized variables are undefined :
+> var foo;
+> foo
+undefined
+
+Missing parameters are undefined :
+> function f(x) { return x }
+> f()
+undefined
+
+If you read a nonexistent property, you get undefined :
+> var obj = {}; // empty object
+> obj.foo
+undefined
+
+cateagorizing values using typeof and instanceof
+
+typeof mainly used for primitive types
+instanceof used for  objects
+
+instanceof looks like this:
+value instanceof Constr
+
+It returns true if value is an object that has been created by the constructor Constr (see
+“Constructors: Factories for Objects” on page 28). 
+
+Here are some examples:
+> var b = new Bar();
+> b instanceof Bar
+true
+// object created by constructor Bar
+
+> {} instanceof Object
+true
+> [] instanceof Array
+true
+> [] instanceof Object
+true
+// Array is a subconstructor of Object
+
+> undefined instanceof Object
+false
+> null instanceof Object
+false
+
+binary Logical operators
+ binary logical operators in  javascripts are short circuiting  the  means if first  operand  is  more enough to decide  value its not  going to  evaluate seconde  operand
+
+for  example
+
+ false  && foo()
+ if  false  is  more  enough to  get  outcome  so foo  function  not  called  by engine.
+
+
+And(&&)
+
+if first  operand is falsy  return it otherwise  return second
+
+
+NaN && 123
+'NaN'
+
+123 && 'abc'
+'abc'
+
+OR(||)
+
+if  first opernad  is truthy return it other wise return second  operator
+
+variables  are function scoped
+
+
+
+angular js
+
+
+angular js  is  javascript framework
+building  blocks of angular js
+1. module
+   a logical container  of  application component
+
+2. "scope"  obejct
+   detects the model changes  and emits  events
+
+3.controller
+   a function  where you coordinates user actions  by configuring scope  object.
+
+4.Directive
+   connect DOM with scope
+
+5. Filter
+   a function used  to transform the data for  presentation
+
+6. Factory
+
+7. Services
+
+8. Value
+
+9. Provider
+
+10. Constant
+
+2, 3, 4, 5 are used encapsulate user  interaction logic
+
+6, 7, 8, 9, 10 encapsulates  non-user interaction logic
